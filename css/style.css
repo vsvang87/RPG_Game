@@ -183,6 +183,13 @@ button {
     color:#963404;
     height:9vh;
     box-shadow: 0px 6px 10px -4px rgba(0,0,0,0.4);
+    transition: 0.2s ease-in-out;
+    
+}
+button:hover {
+    background: #963404;
+    color: #fcc02a;
+    transform: scale(1.1);
 }
 
 @media(min-width:550px){
