@@ -3,6 +3,10 @@ function getDiceRollArray(diceCount) {
     return Math.floor(Math.random() * 6) + 1;
   });
 }
+//get percentage
+const getPercentage = (remainingHealth, maximumHealth) => {
+  return (100 * remainingHealth) / maximumHealth;
+};
 //place holder function
 function getDicePlaceHolderHtml(diceCount) {
   return new Array(diceCount)
@@ -13,4 +17,4 @@ function getDicePlaceHolderHtml(diceCount) {
     .join("");
 }
 
-export { getDiceRollArray, getDicePlaceHolderHtml };
+export { getDiceRollArray, getDicePlaceHolderHtml, getPercentage };
